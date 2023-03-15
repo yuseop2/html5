@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"
+		<title>문서연습 - 미디어</title>
+	</head>
+	<body>
+		<h2>미디어 다루기</h2>
+		<h3>이미지 다루기</h3>
+		<img src="./미디어 예시 자료/뉴진스민지1.jpeg" alt="뉴진스1" width="200"><br><br>
+		<figure id="visual1">
+			<img src="./미디어 예시 자료/뉴진스민지2.jpeg" alt="뉴진스2" title="민지!!" width="200">
+		</figure>
+		<h3>뉴진스 멤버</h3>
+		<ul>
+			<li>
+				<h4>민지</h4>
+				<img src="./미디어 예시 자료/뉴진스민지3.jpeg" alt="뉴진스3" width="200">
+			</li>
+			<li>
+				<h4>민지2</h4>
+				<img src="./미디어 예시 자료/뉴진스민지4.jpeg" alt="뉴진스4" width="200">
+			</li>
+			
+					
+		<h3>사운드 다루기</h3>
+		<p>mp3</p>
+		<audio src="./미디어 예시 자료/Ditto.mp3" controls></audio>
+		<audio src="./미디어 예시 자료/Ditto.mp3" autoplay></audio>
+		<audio src="./미디어 예시 자료/Ditto.mp3" autoplay loop></audio>
+		<audio src="./미디어 예시 자료/Ditto.mp3" autoplay loop controls></audio>
+
+		<p>mp3,wav</p>
+		<audio autoplay loop controls>
+			<source src="./미디어 예시 자료/Ditto.mp3" type="audio/mp3">
+			<source src="./미디어 예시 자료/Ditto.wav" type="audio/wav">
+		</audio>
+
+		<h3>동영상 다루기</h3>
+		<p>mp4,ogv,webm</p>
+		<video poster="./미디어 예시 자료/뉴진스민지1.jpeg" autoplay loop controls muted>
+			<source src="./미디어 예시 자료/Ditto.mp4" type="video/mp4">
+			<source src="./미디어 예시 자료/Ditto.ogg" type="video/ogg">
+		</video>
+		<hr>
+		<h3>내부 프레임</h3>
+		<p>이미지, 다른 웹 문서, 동영상, 유튜브 등을 내부 문서에 표시</p>
+		<iframe src="./미디어 예시 자료/Ditto.mp4" width="500" height="300">
+		</iframe>
+		<hr>
+		<iframe width="711" height="400" src="https://www.youtube.com/embed/31U8soCoPSs" 
+		title="[페이스캠4K] 뉴진스 민지 &#39;Ditto&#39; (NewJeans MINJI FaceCam) @SBS Inkigayo 230115"
+		 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		 allowfullscreen>
+		</iframe>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문서 연습 - 폼 요소</title>
+	</head>
+	<body>
+		<h2>폼 요소</h2>
+		<p>웹 브라우저 상에서 데이터 입력 받아 서버로 전달하는 UI 필수 요소</p>
+		<hr>
+		<form action="join.jsp" method="post">
+		<fieldset id="set1">
+			<legend>필수 입력</legend>
+			<label for="id">아이디 : </label>			
+			<input type="text" name="id" id="id" autofocus required>
+			<input type="button" value="아이디 중복확인"><br><br>
+			<label for="pw">비밀번호 : </label>			
+			<input type="password" name="pw" id="pw" autofocus required><br><br>
+			<label for="name">이름 : </label>			
+			<input type="text" name="name" id="name" autofocus required><br><br>
+			
+		 <!-- <input type="text" name="id2" id="id2" placeholder="아이디를 입력하세요"><br><br> -->
+		 <!-- <input type="text" name="id" id="kkkkk" readonly autofocus required><br><br> -->
+		
+			<label>성별 : </label><br>
+			<label for="m1">남  </label>
+			<input type="radio" name="ml" id="ml1" checked ><br>				
+			<label for="m2">여  </label>
+			<input type="radio" name="ml" id="ml2" ><br>
+
+			<label for="phone">전화번호</label>
+			<input type="tel" name="phone" id="phone" required ><br><br>
+			
+			<label for="email">이메일</label>
+			<input type="email" name="email" id="email" required ><br><br>
+		</fieldset><br><br>
+		<fieldset id="set2">
+			<legend>선택 입력</legend>
+			<label for="birth">생년월일</label>
+			<input type="date" name="birth" id="birth"><br><br>
+
+			<label>취미 : </lable>
+			<label for="hb1">게임</label>
+			<input type="checkbox" name="hb1" id="hb1">&nbsp;&nbsp;&nbsp;	
+			<label for="hb2">독서</label>
+			<input type="checkbox" name="hb1" id="hb2">&nbsp;&nbsp;&nbsp;
+			<label for="hb3">여행</label>
+			<input type="checkbox" name="hb1" id="hb3">&nbsp;&nbsp;&nbsp;
+			<label for="hb4">낚시</label>
+			<input type="checkbox" name="hb1" id="hb4">&nbsp;&nbsp;&nbsp;<br><br>
+
+			<label for="city">지역</label>
+			<select name="city">
+				<option value="0">선택안함</option>
+				<option value="a" selected>고양</option>
+				<option value="b">파주</option>
+				<option value="c">김포</option>
+				<option value="d">인천</option>
+			</select><br><br>
+
+			<label for="memo">하고싶은 말</label>
+			<textarea name="memo" id="memo" row="10" cols="50"></textarea>
+		</fieldset><br><hr><br>
+			<div>
+				<input type="submit" value="회원가입">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" value="초기화">
+			</div>
+		</form>
+	</body>
+
+<!-- 각주 넣기 -->
+<!-- method를 post로 해야 내용을 알수 없다 -->
+<!-- placeholder 칸안에 작성되게 -->
+<!-- fieldset 필드 나누기 -->
+<!-- fieldset 에서 legend가 이름넣는것 -->
+<!-- 각주 넣기 -->
+<!-- 각주 넣기 -->
+<!-- hr은 줄긋기 -->
+<!-- br은 줄바꾸기 -->
+<!-- input은 한줄 입력이지만 textarea는 몇줄입력할지 한줄당 몇글자 입력할지 정할수 있음 -->
+<!-- autofocus 자동으로 그곳으로 커서가 가게 한다 -->
+<!-- required 필수 입력 요소로 만듬 -->
+<!-- &nbsp; 띄어쓰기 한칸 하는 명령어 -->
+<!-- radio에서 선택되게 하는거 check -->
+<!-- radio에서 name을 같게 해야 둘중 하나로 연결됨 -->
+<!-- radio는 하나만 선택해야됨 반드시 -->
+<!-- checkbox는 안하거나 여러개 가능 -->
+<!-- tel은 번호 자동으로 불러옴 -->
+<!-- email은 이메일 주소 여태 입력한거 자동으로 불러옴 -->
+<!-- date는 날짜 선택 -->
+<!-- time 시간 선택 -->
+<!-- select의 자식태그 option태그다 -->
+
+</html>
